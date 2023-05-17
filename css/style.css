@@ -1,11 +1,11 @@
 :root {
   --fuenteHeading: "PT Sans", sans-serif;
   --fuenteParrafos: "Open Sans", sans-serif;
-  --primario: #784D3C;
+  --primario: #f09103;
   --gris: #e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
-  --cafe: orange;
+  --cafe: #db9106, 68, 0;
 }
 
 html {
@@ -113,11 +113,11 @@ img {
   color: var(--blanco);
 }
 
-.logo__nombre {
+.logo logo__nombre {
   font-weight: 400;
 }
 
-.logo__bold {
+.logo .logo__bold {
   font-weight: 700;
 }
 
@@ -175,7 +175,7 @@ img {
 }
 
 .boton--primario {
-  background-color: var(--negro);
+  background-color: var(--cafe);
 }
 
 .boton--secundario {
@@ -211,11 +211,29 @@ img {
 }
 
 .footer {
-  background-color: var(--negro);
+  background-color: var(--primario);
   padding-bottom: 3rem;
   margin-top: 4rem;
+  color: var(--negro);
 }
 
+.footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer .footer p {
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer .footer p {
+    display: flex;
+    text-align: center;
+  }
+}
 /** Sobre Nosotros **/
 @media (min-width: 768px) {
   .sobre-nosotros {

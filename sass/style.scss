@@ -2,11 +2,11 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
 
-    --primario: #784D3C;
+    --primario: #f09103;
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
-    --cafe: orange;
+    --cafe: #db9106, 68, 0;
 }
 html {
     box-sizing: border-box;
@@ -82,6 +82,7 @@ img {
         margin-top: 15rem;
     }
 }
+
 .barra {
     padding-top: 4rem;
 }
@@ -96,19 +97,21 @@ img {
 .logo {
     color: var(--blanco);
     
-}
-.logo__nombre {
+    logo__nombre {
     font-weight: 400;
-}
-.logo__bold {
+    }
+
+    .logo__bold {
     font-weight: 700;
-}
-@media (min-width: 768px) {
-    .navegacion {
-        display: flex;
-        gap: 2rem;
     }
 }
+@media (min-width: 768px) {
+        .navegacion {
+            display: flex;
+            gap: 2rem;
+            }
+}
+
 .navegacion__enlace {
     display: block;
     text-align: center;
@@ -121,7 +124,7 @@ img {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
-    }
+        }
 }
 
 .entrada {
@@ -155,7 +158,7 @@ img {
     cursor: pointer;
 }
 .boton--primario {
-    background-color: var(--negro);
+    background-color: var(--cafe);
 }
 .boton--secundario {
     background-color: var(--primario);
@@ -186,9 +189,28 @@ img {
 }
 
 .footer {
-    background-color: var(--negro);
+    background-color: var(--primario);
     padding-bottom: 3rem;
     margin-top: 4rem;
+    color: var(--negro);
+
+    p{
+    color: #ffffff; 
+    text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        .footer p {
+            display: flex;
+            gap: 2rem;            
+            }
+        }
+    @media (min-width: 768px) {
+        .footer p {
+            display: flex;
+            text-align: center;            
+        }
+    }
 }
 
 /** Sobre Nosotros **/
