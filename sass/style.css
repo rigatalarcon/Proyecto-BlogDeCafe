@@ -5,7 +5,6 @@
   --gris: #e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
-  --cafe: #db9106, 68, 0;
 }
 
 html {
@@ -153,14 +152,15 @@ img {
 .boton {
   display: block;
   font-family: var(--fuenteHeading);
-  color: var(--blanco);
+  color: var(--negro);
   text-align: center;
   padding: 1rem 3rem;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
-  border: none;
+  border: var(--negro) 3px solid;
+  border-radius: 3px;
 }
 
 @media (min-width: 768px) {
@@ -173,7 +173,7 @@ img {
 }
 
 .boton--primario {
-  background-color: var(--cafe);
+  background-color: var(--primario);
 }
 
 .boton--secundario {
@@ -282,7 +282,7 @@ img {
 
 .formulario {
   background-color: var(--blanco);
-  margin: -5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   width: 95%;
   padding: 5rem;
 }
