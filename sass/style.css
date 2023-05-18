@@ -73,10 +73,12 @@ img {
 /** Header **/
 .webp .header {
   background-image: url(../img/banner.webp);
+  background-image: linear-gradient(orange, #333);
 }
 
 .no-webp .header {
   background-image: url(../img/banner.jpg);
+  background-image: linear-gradient(orange, #333);
 }
 
 .header {
