@@ -179,7 +179,7 @@ img {
 
 .boton--secundario {
   background-color: var(--primario);
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .cursos {
