@@ -129,7 +129,7 @@ img {
 .entrada {
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
-}
+    }
 .entrada:last-of-type {
     border: none;
     margin-bottom: 0;
@@ -145,7 +145,8 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
     border: var(--negro) 3px solid;
-    border-radius: 3px;
+    
+    
 }
 
 @media (min-width: 768px) {
@@ -156,12 +157,15 @@ img {
 }
 .boton:hover {
     cursor: pointer;
+    background-color: brown;
 }
 .boton--primario {
     background-color: var(--primario);
-}
+    border-radius: 5px;
+    }
 .boton--secundario {
     background-color: var(--primario);
+     border-radius: 5px;
 }
 
 .cursos {
@@ -199,24 +203,18 @@ img {
     text-align: center;
     }
     
-    @media (min-width: 768px) {
-        .footer p {
-            display: flex;
-            gap: 2rem;            
-            }
-        }
-    @media (min-width: 768px) {
-        .footer p {
-            display: flex;
-            text-align: center;            
-        }
-    }
+    
 }
 
 /** Sobre Nosotros **/
 @media (min-width: 768px) {
     .sobre-nosotros {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .benficios__imagen {
+        disdplay: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
