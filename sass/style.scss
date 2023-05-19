@@ -255,11 +255,14 @@ img {
 
 /** Contacto **/
 .contacto-bg {
-    background-image: url(../img/contacto.jpg);
+    /*background-image: url(../img/contacto.jpg);*/
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
+.carousel-item active {
+    transition-delay: 2s}
 
 .formulario {
     background-color: var(--blanco);
