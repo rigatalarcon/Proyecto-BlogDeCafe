@@ -210,6 +210,19 @@ img {
   font-size: 2rem;
 }
 
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #e99b0b;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  color: #693d2f;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+
 .footer {
   background-color: var(--primario);
   padding-bottom: 3rem;
@@ -219,6 +232,11 @@ img {
 .footer p {
   color: #ffffff;
   text-align: center;
+}
+.footer .redes a {
+  color: var(--blanco);
+  font-size: 50px;
+  letter-spacing: 30px;
 }
 
 /** Info**/
