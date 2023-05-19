@@ -73,12 +73,10 @@ img {
 /** Header **/
 .webp .header {
   background-image: url(../img/banner.webp);
-  background-image: linear-gradient(orange, #333);
 }
 
 .no-webp .header {
   background-image: url(../img/banner.jpg);
-  background-image: linear-gradient(orange, #333);
 }
 
 .header {
@@ -184,7 +182,7 @@ img {
   border-radius: 6px;
 }
 
-.cursos {
+.curso {
   list-style: none;
 }
 
@@ -223,7 +221,7 @@ img {
   text-align: center;
 }
 
-/** Sobre Nosotros **/
+/** Info**/
 @media (min-width: 768px) {
   .sobre-nosotros {
     display: grid;

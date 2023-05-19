@@ -61,11 +61,11 @@ img {
 /** Header **/
 .webp .header {
     background-image: url(../img/banner.webp);
-    background-image: linear-gradient(orange, #333)
+    
 }
 .no-webp .header {
     background-image: url(../img/banner.jpg);
-    background-image: linear-gradient(orange, #333)
+    
 }
 .header {
     height: 60rem;
@@ -172,13 +172,14 @@ img {
     border-radius: 6px;
 }
 
-.cursos {
+.curso {
     list-style: none;
 }
 
 .widget-curso {
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
+    
 }
 .widget-curso:last-of-type {
     border: none;
@@ -210,7 +211,7 @@ img {
     
 }
 
-/** Sobre Nosotros **/
+/** Info**/
 @media (min-width: 768px) {
     .sobre-nosotros {
         display: grid;
@@ -228,6 +229,7 @@ img {
 .curso {
     padding: 3rem 0;
     border-bottom: 1px solid var(--gris);
+    
 }
 @media (min-width: 768px) {
     .curso {
