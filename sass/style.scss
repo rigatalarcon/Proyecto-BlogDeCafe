@@ -214,14 +214,15 @@ img {
     margin-top: 4rem;
     color: var(--negro);
 
-    p{
-    color: #ffffff; 
+    #p{
+    color: var(--negro); 
     text-align: center;
     }
     
-    .redes a{
+    .barra redes {
+    text-align: center;
     color: var(--blanco);
-    font-size: 50px;
+    font-size: 80px;
     letter-spacing: 30px;
 }
     

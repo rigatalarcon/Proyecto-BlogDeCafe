@@ -229,13 +229,14 @@ img {
   margin-top: 4rem;
   color: var(--negro);
 }
-.footer p {
-  color: #ffffff;
+.footer #p {
+  color: var(--negro);
   text-align: center;
 }
-.footer .redes a {
+.footer .barra redes {
+  text-align: center;
   color: var(--blanco);
-  font-size: 50px;
+  font-size: 80px;
   letter-spacing: 30px;
 }
 
