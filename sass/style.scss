@@ -214,19 +214,18 @@ img {
     margin-top: 4rem;
     color: var(--negro);
 
-    #p{
-    color: var(--negro); 
+    p{
     text-align: center;
     }
     
-    .barra redes {
+    .redes a {
     text-align: center;
-    color: var(--blanco);
-    font-size: 80px;
+    color: var(--negro);
+    font-size: 2rem;
     letter-spacing: 30px;
+    }
 }
-    
-}
+
 
 /** Info**/
 @media (min-width: 768px) {
