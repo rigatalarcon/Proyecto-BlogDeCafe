@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos BlogDe-Café</title>
+    <title>BlogDe-Café</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="./paginas/cursos.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="../css/normalize.css" as="style">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,12 +33,13 @@
                     <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
                     <a href="./info.html" class="navegacion__enlace">Información</a>
+                    <a href="./local.html" class="navegacion__enlace">local</a>
                 </nav>
             </div>
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <h2 class="no-margin">Blog de café cursos</h2>
             <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
         </div>
     </header>
@@ -174,10 +183,16 @@
                 </a>
                 <p>Todos los derechos reservados</p>
                 <nav class="navegacion">
-                    <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="./info.html" class="navegacion__enlace">Información</a>
+                    <a href="./paginas/local.html" class="navegacion__enlace">local</a>
                 </nav>
+                <div class="redes">
+                    <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=ES"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>

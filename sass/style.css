@@ -28,11 +28,7 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: var(--fuenteHeading);
   line-height: 1.2;
 }
@@ -51,6 +47,10 @@ h3 {
 
 h4 {
   font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2rem;
 }
 
 img {
@@ -127,7 +127,7 @@ img {
 .navegacion__enlace {
   display: block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--blanco);
 }
 
@@ -169,17 +169,19 @@ img {
 }
 .boton:hover {
   cursor: pointer;
-  background-color: brown;
+  color: var(--gris);
 }
 
 .boton--primario {
   background-color: var(--primario);
   border-radius: 5px;
+  transition: all 10s;
 }
 
 .boton--secundario {
   background-color: var(--primario);
   border-radius: 6px;
+  transition: all 4s;
 }
 
 .curso {
@@ -210,17 +212,9 @@ img {
   font-size: 2rem;
 }
 
-.subir {
+a.button--subir {
   height: 40px;
   width: 40px;
-  background-color: #e99b0b;
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  color: #693d2f;
-  text-align: center;
-  line-height: 40px;
-  font-size: 25px;
 }
 
 .footer {
@@ -288,14 +282,10 @@ img {
 
 /** Contacto **/
 .contacto-bg {
-  /*background-image: url(../img/contacto.jpg);*/
+  background-image: url(../img/contacto.jpg);
   height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.carousel-item active {
-  transition-delay: 2s;
 }
 
 .formulario {
