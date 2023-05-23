@@ -49,6 +49,7 @@ h5 {
 }
 img {
     max-width: 100%;
+    border: var(--negro) 2px solid;
 }
 /** Utilidades **/
 .no-margin {
@@ -59,6 +60,9 @@ img {
 }
 .centrar-texto {
     text-align: center;
+}
+.boton-arriba .fa-arrow-up {
+    background-color: var(--gris);
 }
 
 /** Header **/
@@ -203,11 +207,7 @@ img {
 .widget-curso__info {
     font-size: 2rem;
 }
-a.button--subir {
-    height: 40px;
-    width: 40px;
-    
-}
+
 .footer {
     background-color: var(--primario);
     padding-bottom: 3rem;
@@ -218,31 +218,56 @@ a.button--subir {
     text-align: center;
     }
     
-    .redes a {
+    
+}
+.redes a {
     text-align: center;
     color: var(--negro);
     font-size: 2rem;
     letter-spacing: 30px;
+}
+
+/** pagina Info**/
+.siderbar {
+    grid-area: inferior;
+
+    h2 {
+    text-align: center;
+    text-decoration: underline;
     }
 }
 
+.contenido-principal {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas: "entrada1 entrada2";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
 
-/** Info**/
-
-
-@media (min-width: 768px) {
-    .sobre-nosotros {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-    .benficios__imagen {
-        disdplay: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
+    h3{
+    text-decoration: underline;
     }
 }
 
+    @media screen and(min-width:720px) {
+
+        .layout-shifter {
+            grid-template-areas: "contenido sidebar";
+            column-gap: 2rem;
+        }
+        .siderbar {
+            grid-area: sidebar;
+        }
+
+        .contenido-principal {
+
+            grid-area: contenido;
+            grid-template-areas:"entrada1"
+                                "entrada2";
+
+            grid-template-columns: unset;    
+        }
+}
 /** Cursos **/
 .curso {
     padding: 3rem 0;
@@ -257,7 +282,7 @@ a.button--subir {
     }
 }
 .curso:last-of-type {
-   border: none;
+    border: none;
 }
 .curso__label {
     font-family: var(--fuenteHeading);

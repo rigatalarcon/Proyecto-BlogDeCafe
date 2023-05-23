@@ -212,9 +212,8 @@ img {
   font-size: 2rem;
 }
 
-a.button--subir {
-  height: 40px;
-  width: 40px;
+.boton-arriba .fa-arrow-up {
+  background-color: var(--gris);
 }
 
 .footer {
@@ -226,7 +225,8 @@ a.button--subir {
 .footer p {
   text-align: center;
 }
-.footer .redes a {
+
+.redes a {
   text-align: center;
   color: var(--negro);
   font-size: 2rem;
@@ -234,20 +234,6 @@ a.button--subir {
 }
 
 /** Info**/
-@media (min-width: 768px) {
-  .sobre-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-  .benficios__imagen {
-    disdplay: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-}
 /** Cursos **/
 .curso {
   padding: 3rem 0;
