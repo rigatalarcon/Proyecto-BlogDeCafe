@@ -63,6 +63,10 @@ img {
   max-width: 100%;
 }
 
+img:hover {
+  transform: scale(1.5);
+}
+
 /** Utilidades **/
 .no-margin {
   margin: 0;
@@ -122,15 +126,6 @@ img {
 }
 .logo .__bold {
   font-weight: 700;
-}
-
-.navegacion {
-  background-color: var(--blanco);
-}
-
-.navegacion__enlace {
-  text-align: center;
-  font-size: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -226,10 +221,6 @@ img {
   letter-spacing: 30px;
 }
 
-.fla-arriba {
-  background-color: springreen;
-}
-
 /** pagina Info**/
 .siderbar {
   grid-area: inferior;
@@ -272,7 +263,7 @@ img {
   border-bottom: 1px solid var(--gris);
   height: 100%;
 }
-.curso .__imagen {
+.curso .curso__imagen {
   height: 100%;
 }
 

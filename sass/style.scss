@@ -67,7 +67,9 @@ img {
     max-width: 100%;
     
 }
-
+img:hover {
+    transform: scale(1.5)
+    }
 /** Utilidades **/
 .no-margin {
     margin: 0;
@@ -136,15 +138,7 @@ img {
         font-weight: 700;
     }
 }
-.navegacion {
-    background-color: var(--blanco)    
-}
-.navegacion__enlace {
-    
-    text-align: center;
-    font-size: 4rem;
-    
-}
+
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
@@ -246,9 +240,7 @@ img {
         letter-spacing: 30px;
     }
 }
-.fla-arriba {
-        background-color: springreen;
-    }
+
 
 /** pagina Info**/
 .siderbar {
@@ -298,9 +290,10 @@ img {
     border-bottom: 1px solid var(--gris);
     height: 100%;
 
-    .__imagen {
+    .curso__imagen {
         height: 100%;  
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -327,8 +320,6 @@ img {
     .__info {
         font-size: 1rem;
     }
-    
-    
 }
 /** Contacto **/
 .contacto-bg {
@@ -336,7 +327,6 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .formulario {
