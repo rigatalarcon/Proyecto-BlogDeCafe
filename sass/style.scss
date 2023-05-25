@@ -18,8 +18,8 @@ html {
 
 body {
     font-family: var(--fuenteParrafos);
-    font-size: 4rem;
-    line-height: 3;
+    font-size: 1.8rem;
+    line-height: 2;
 }
 
 /** Globales **/
@@ -67,9 +67,6 @@ img {
     max-width: 100%;
     
 }
-img:hover {
-    transform: scale(1.5)
-    }
 /** Utilidades **/
 .no-margin {
     margin: 0;
@@ -82,7 +79,6 @@ img:hover {
 .centrar-texto {
     text-align: center;
 }
-
 
 /** Header **/
 .webp .header {
@@ -128,14 +124,16 @@ img:hover {
 }
 
 .logo {
-    color: var(--blanco);
+    font-weight: 400;
 
-    .__nombre {
-        font-weight: 400;
+    .logo__nombre {
+        
+        color: var(--blanco);
     }
 
-    .__bold {
+    .logo__bold {
         font-weight: 700;
+        color: var(--primario)
     }
 }
 

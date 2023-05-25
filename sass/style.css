@@ -15,8 +15,8 @@ html {
 
 body {
   font-family: var(--fuenteParrafos);
-  font-size: 4rem;
-  line-height: 3;
+  font-size: 1.8rem;
+  line-height: 2;
 }
 
 /** Globales **/
@@ -61,10 +61,6 @@ h5 {
 
 img {
   max-width: 100%;
-}
-
-img:hover {
-  transform: scale(1.5);
 }
 
 /** Utilidades **/
@@ -119,13 +115,14 @@ img:hover {
   }
 }
 .logo {
-  color: var(--blanco);
-}
-.logo .__nombre {
   font-weight: 400;
 }
-.logo .__bold {
+.logo .logo__nombre {
+  color: var(--blanco);
+}
+.logo .logo__bold {
   font-weight: 700;
+  color: var(--primario);
 }
 
 @media (min-width: 768px) {
